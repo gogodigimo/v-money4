@@ -1,7 +1,6 @@
 import Money from './component'
 import VMoney from './directive'
 import options from './options'
-const VERSION = proccess.env.VERSION
 
 export {
   Money,

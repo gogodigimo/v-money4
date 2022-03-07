@@ -1,3 +1,5 @@
+*Forked from v-money 3 and altered to allow for blank inputs*
+
 # v-money Mask for Vue.js
 
 ![The Mask Money](https://cdn-images-1.medium.com/max/600/1*Rpc289FpghuHrnzyVpOUig.gif)

@@ -16,7 +16,6 @@ export default {
   props: {
     value: {
       required: true,
-      type: [Number, String],
       default: 0
     },
     masked: {
@@ -57,7 +56,13 @@ export default {
     value: {
       immediate: true,
       handler (newValue, oldValue) {
-        var formatted = format(newValue, this.$props)
+
+        if(!newValue){
+          var formatted = '';
+        }else{
+          var formatted = format(newValue, this.$props)
+        }
+       
         if (formatted !== this.formattedValue) {
           this.formattedValue = formatted
         }
@@ -67,7 +72,7 @@ export default {
 
   methods: {
     change (evt) {
-      this.$emit('input', this.masked ? evt.target.value : unformat(evt.target.value, this.precision))
+      this.$emit('input', this.masked ? evt.target.value : ( (!evt.target.value) ? '' : unformat(evt.target.value, this.precision)))
     }
   }
 }
