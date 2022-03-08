@@ -2,17 +2,17 @@
   <input type="tel"
          :value="formattedValue"
          @change="change"
-         v-money4="{precision, decimal, thousands, prefix, suffix}"
-         class="v-money4" />
+         v-money="{precision, decimal, thousands, prefix, suffix}"
+         class="v-money" />
 </template>
 
 <script>
-import money4 from './directive'
+import money from './directive'
 import defaults from './options'
 import {format, unformat} from './utils'
 
 export default {
-  name: 'Money4',
+  name: 'Money',
   props: {
     value: {
       required: true,
@@ -44,7 +44,7 @@ export default {
     }
   },
 
-  directives: {money4},
+  directives: {money},
 
   data () {
     return {
