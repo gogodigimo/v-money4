@@ -2,8 +2,8 @@
   <input type="tel"
          :value="formattedValue"
          @change="change"
-         v-money="{precision, decimal, thousands, prefix, suffix}"
-         class="v-money" />
+         v-money4="{precision, decimal, thousands, prefix, suffix}"
+         class="v-money4" />
 </template>
 
 <script>

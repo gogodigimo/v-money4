@@ -1,7 +1,7 @@
 <template lang="html">
 <div class="container col-4 col-xl-6 col-md-8 col-sm-10 col-xs-12">
 
-  <h2>v-money <small class="label">Currency mask input for Vue</small></h2>
+  <h2>v-money4 <small class="label">Currency mask input for Vue</small></h2>
 
   <p>
     <img class="img-responsive centered" src="https://cdn-images-1.medium.com/max/600/1*Rpc289FpghuHrnzyVpOUig.gif" />
@@ -24,7 +24,7 @@
   <label>Directive</label>
   <div class="columns">
     <div class="column col-6 col-sm-12">
-      <input type="tel" v-money="config" v-model.lazy="priceDirective" class="form-input input-lg" style="text-align: right" />
+      <input type="tel" v-money4="config" v-model.lazy="priceDirective" class="form-input input-lg" style="text-align: right" />
     </div>
     <div class="column col-6 col-sm-12">
       <h3>{{priceDirective}}</h3>
@@ -34,7 +34,7 @@
   <label>Directive on Custom Component (TextField from <a href="https://vuetifyjs.com/components/text-fields">vuetify</a>)</label>
   <div class="columns">
     <div class="column col-6 col-sm-12">
-      <v-text-field v-money="config" v-model.lazy="priceVuetify"></v-text-field>
+      <v-text-field v-money4="config" v-model.lazy="priceVuetify"></v-text-field>
     </div>
     <div class="column col-6 col-sm-12">
       <h3>{{priceVuetify}}</h3>
@@ -121,7 +121,7 @@ export default {
 
 <style lang="css">
 @import url('https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.14/spectre.min.css');
-.v-money {
+.v-money4 {
   text-align: right;
 }
 input {

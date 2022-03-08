@@ -6,11 +6,11 @@ export default function (el, binding) {
   if (!binding.value) return
   var opt = assign(defaults, binding.value)
 
-  // v-money used on a component that's not a input
+  // v-money4 used on a component that's not a input
   if (el.tagName.toLocaleUpperCase() !== 'INPUT') {
     var els = el.getElementsByTagName('input')
     if (els.length !== 1) {
-      // throw new Error("v-money requires 1 input, found " + els.length)
+      // throw new Error("v-money4 requires 1 input, found " + els.length)
     } else {
       el = els[0]
     }

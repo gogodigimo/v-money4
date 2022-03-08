@@ -1,4 +1,4 @@
-*Forked from v-money 3 and altered to allow for blank inputs*
+*Forked from v-money and altered to allow for blank inputs*
 
 # v-money Mask for Vue.js
 
@@ -21,9 +21,9 @@ For other types of mask, use [vue-the-mask](https://vuejs-tips.github.io/vue-the
 
 ```js
 import Vue from 'vue'
-import money from 'v-money'
+import money from 'v-money4'
 
-// register directive v-money and component <money>
+// register directive v-money4 and component <money>
 Vue.use(money, {precision: 4})
 ```
 
@@ -37,7 +37,7 @@ Vue.use(money, {precision: 4})
 </template>
 
 <script>
-  import {Money} from 'v-money'
+  import {Money} from 'v-money4'
 
   export default {
     components: {Money},
@@ -64,12 +64,12 @@ Must use `vmodel.lazy` to bind works properly.
 ```html
 <template>
   <div>
-    <input v-model.lazy="price" v-money="money" /> {{price}}
+    <input v-model.lazy="price" v-money4="money" /> {{price}}
   </div>
 </template>
 
 <script>
-  import {VMoney} from 'v-money'
+  import {VMoney} from 'v-money4'
 
   export default {
     data () {

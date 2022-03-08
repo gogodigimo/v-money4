@@ -1,8 +1,8 @@
 {
-  "name": "v-money",
+  "name": "v-money4",
   "version": "0.8.1",
   "description": "Vue currency input/directive mask",
-  "main": "dist/v-money.js",
+  "main": "dist/v-money4.js",
   "scripts": {
     "size": "size-limit",
     "upgrade:check": "ncu",
@@ -27,7 +27,7 @@
   ],
   "size-limit": [
     {
-      "path": "dist/v-money.js",
+      "path": "dist/v-money4.js",
       "limit": "1.6 KB"
     }
   ],
