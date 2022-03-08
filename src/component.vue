@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import money from './directive'
+import money4 from './directive'
 import defaults from './options'
 import {format, unformat} from './utils'
 
 export default {
-  name: 'Money',
+  name: 'Money4',
   props: {
     value: {
       required: true,
@@ -44,7 +44,7 @@ export default {
     }
   },
 
-  directives: {money},
+  directives: {money4},
 
   data () {
     return {

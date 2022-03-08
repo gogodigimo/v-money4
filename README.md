@@ -21,10 +21,10 @@ For other types of mask, use [vue-the-mask](https://vuejs-tips.github.io/vue-the
 
 ```js
 import Vue from 'vue'
-import money from 'v-money4'
+import money4 from 'v-money4'
 
 // register directive v-money4 and component <money>
-Vue.use(money, {precision: 4})
+Vue.use(money4, {precision: 4})
 ```
 
 ### B. Use as component: https://jsfiddle.net/auom8st8/
@@ -32,15 +32,15 @@ Vue.use(money, {precision: 4})
 ```html
 <template>
   <div>
-    <money v-model="price" v-bind="money"></money> {{price}}
+    <money4 v-model="price" v-bind="money"></money> {{price}}
   </div>
 </template>
 
 <script>
-  import {Money} from 'v-money4'
+  import {Money4} from 'v-money4'
 
   export default {
-    components: {Money},
+    components: {Money4},
 
     data () {
       return {
@@ -69,7 +69,7 @@ Must use `vmodel.lazy` to bind works properly.
 </template>
 
 <script>
-  import {VMoney} from 'v-money4'
+  import {VMoney4} from 'v-money4'
 
   export default {
     data () {
@@ -86,7 +86,7 @@ Must use `vmodel.lazy` to bind works properly.
       }
     },
 
-    directives: {money: VMoney}
+    directives: {money4: VMoney4}
   }
 </script>
 ```

@@ -1,10 +1,10 @@
-import Money from './component'
-import VMoney from './directive'
+import Money4 from './component'
+import VMoney4 from './directive'
 import options from './options'
 
 export {
-  Money,
-  VMoney,
+  Money4,
+  VMoney4,
   options,
   VERSION
 }
@@ -15,8 +15,8 @@ function install (Vue, globalOptions) {
       options[key] = globalOptions[key]
     })
   }
-  Vue.directive('money', VMoney)
-  Vue.component('money', Money)
+  Vue.directive('money4', VMoney4)
+  Vue.component('money4', Money4)
 }
 
 export default install
