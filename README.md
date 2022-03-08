@@ -1,4 +1,4 @@
-*Forked from v-money 3 and altered to allow for blank inputs*
+*Forked from v-moneyand altered to allow for blank inputs*
 
 # v-money Mask for Vue.js
 
